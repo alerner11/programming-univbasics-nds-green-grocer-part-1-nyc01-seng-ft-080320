@@ -1,7 +1,7 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each_index do |item_index|
     if collection[item_index].key(name)
-      puts collection[item_index]
+      return collection[item_index]
     end
   end
 end
