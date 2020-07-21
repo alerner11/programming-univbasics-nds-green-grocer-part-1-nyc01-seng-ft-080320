@@ -4,9 +4,7 @@ def find_item_by_name_in_collection(name, collection)
       collection[item_index][:item] == name
     end
     
-    if collection[item_index].key(name)
-      return collection[item_index]
-    end
+    
   end
 end
 
