@@ -1,6 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each_index do |item_index|
-    collection[item_index][:item] == name
+    collection[item_index][:item] 
   end
 end
 
