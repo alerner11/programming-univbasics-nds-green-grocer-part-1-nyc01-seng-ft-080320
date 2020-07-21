@@ -1,11 +1,10 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each_index do |item_index|
     collection = collection[item_index].select do |k, v| 
-      value == name
+      v == name
     end
   end
   puts collection
-  
 end
 
 def consolidate_cart(cart)
