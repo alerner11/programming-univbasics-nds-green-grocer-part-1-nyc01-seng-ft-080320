@@ -1,11 +1,7 @@
 def find_item_by_name_in_collection(name, collection)
-  hello = {}
   collection.each_index do |item_index|
-    hello = collection[item_index].select do |k, v| 
-      v == name
-    end
+    collection[item_index].fetch
   end
-  puts hello
 end
 
 def consolidate_cart(cart)
