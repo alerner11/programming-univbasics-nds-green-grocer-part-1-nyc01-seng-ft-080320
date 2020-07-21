@@ -19,7 +19,7 @@ def consolidate_cart(cart)
     if !find_item_by_name_in_collection(item_hash[:item], new_cart)
       new_cart << item_hash
       new_cart[-1][:count] = 1
-    end
+    
     # if the given item IS currently in the new cart, we need to find it and update its count value
     else 
       new_cart.each do |new_cart_item_hash|
