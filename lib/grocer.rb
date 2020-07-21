@@ -3,8 +3,6 @@ def find_item_by_name_in_collection(name, collection)
     collection[item_index].select do |k, v| 
       collection[item_index][:item] == name
     end
-    
-    
   end
 end
 
