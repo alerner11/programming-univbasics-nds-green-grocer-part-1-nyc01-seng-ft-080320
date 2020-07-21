@@ -1,6 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each_index do |item_index|
-    collection[item_index][:item] 
+    collection[item_index].has
   end
 end
 
