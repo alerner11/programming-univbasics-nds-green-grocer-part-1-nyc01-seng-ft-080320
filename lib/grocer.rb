@@ -1,7 +1,7 @@
 def find_item_by_name_in_collection(name, collection)
   found_it = {}
   collection.each_index do |item_index|
-    if (collection[item_index][:item] == name)
+    collection[item_index][:item].any? == 
       found_it = collection[item_index]
     end
   end
