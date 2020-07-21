@@ -1,6 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
   collection.any? do |item_index|
-    collection[item_index][:item] |item_stats|
+    collection[item_index][:item] == name
       collection[item_index]
     end
   end
