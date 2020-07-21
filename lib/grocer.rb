@@ -12,7 +12,14 @@ def consolidate_cart(cart)
   #
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
-
+  new_cart = []
+  cart.each_index do |item_index|
+    # if the given item is not currently in the new cart, shovel its hash into the new cart
+    if !find_item_by_name_in_collection(cart[item_index][:item], new_cart)
+      new_cart << find_item_by_name_in_collection(cart[item_index][:item])
+      new_cart[-1][:count] = 1
+    end
+  end
 end
 
 
