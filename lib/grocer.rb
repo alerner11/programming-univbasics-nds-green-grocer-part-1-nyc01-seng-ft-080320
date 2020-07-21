@@ -1,5 +1,6 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each_index do |item_index|
+    puts collection[item_index]
     collection[item_index].has_value?(name) do 
       puts collection[item_index]
     end
